@@ -7,8 +7,11 @@ namespace Game4Freak.BankingSystem.model
 {
     public abstract class TransferReason
     {
+        // fromPlayer is the player the money is coming from (doesnt have to be the id)
         public string fromPlayer { private set; get; }
+        // toPlayer is the player the money is going to (doesnt have to be the id)
         public string toPlayer { private set; get; }
+        // amount is the amount of money that is transfered
         public decimal amount { private set; get; }
 
         public TransferReason(string fromPlayer, string toPlayer, decimal amount)
