@@ -14,10 +14,11 @@ Use the function **getAccountBalance(string accountId)** to get the balance of a
 or when you got the **AccountData** you can get the variable balance (it doesnt update itself so keep track of it)  
 
 ## Changing Balance
+**Note:** You can use your custom TransferReason class with your custom text  
+  
 You can use the function **increaseBalance(String playerId, decimal amount, TransferReason reason)** to increase / decrease the balance of the players active account  
 **OR**  
 Use the function **increaseAccountBalance(string accountId, decimal amount, TransferReason reason)** to increase / decrease the balance of a specific account  
-**Note:** You can use your custom TransferReason class with your custom text  
 
 ## Accounts
 ### Getting AccountData
