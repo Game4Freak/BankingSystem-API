@@ -1,5 +1,5 @@
 # BankingSystem-API
-Documentation for the BankingSystem API
+Documentation for the BankingSystem API.  
 Get the API here: https://github.com/Game4Freak/BankingSystem-API/releases
 
 # Balance Increased Event
