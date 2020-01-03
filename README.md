@@ -1,5 +1,6 @@
 # BankingSystem-API
 Documentation for the BankingSystem API
+Get the API here: https://github.com/Game4Freak/BankingSystem-API/releases
 
 # Balance Increased Event
 You can subscribe to the **onBalanceIncreased** event with ```Game4Freak.BankingSystem.API.onBalanceIncreased```
