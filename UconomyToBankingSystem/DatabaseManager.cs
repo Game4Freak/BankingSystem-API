@@ -39,13 +39,14 @@ namespace fr34kyn01535.Uconomy
         public decimal IncreaseBalance(string id, decimal increaseBy)
         {
             TransferReason reason = null;
+            UnturnedPlayer player = UnturnedPlayer.FromCSteamID(new CSteamID(ulong.Parse(id)));
             if (increaseBy >= 0)
             {
-                reason = new TransferReason_Unknown_In($"{id} ({UnturnedPlayer.FromCSteamID(new CSteamID(ulong.Parse(id)))?.DisplayName})", "", increaseBy);
+                reason = new TransferReason_Unknown_In($"{id} ({(player != null ? player.DisplayName : id)})", "", increaseBy);
             }
             else
             {
-                reason = new TransferReason_Unknown_Out("", $"{id} ({UnturnedPlayer.FromCSteamID(new CSteamID(ulong.Parse(id)))?.DisplayName})", increaseBy);
+                reason = new TransferReason_Unknown_Out("", $"{id} ({(player != null ? player.DisplayName : id)})", increaseBy);
             }
             BankingSystem.Instance.api.increaseBalance(id, increaseBy, reason);
             decimal balance = BankingSystem.Instance.api.getPlayerBalance(id);
