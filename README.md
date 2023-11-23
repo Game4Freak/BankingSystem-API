@@ -1,3 +1,8 @@
+> [!WARNING]  
+> Pretty ugly code ahead.  
+> It's quite embarrassing but someone might still use it even if it's broken.  
+> There is most likely no fix coming, use at own risk.
+
 # BankingSystem-API
 Documentation for the BankingSystem API.  
 Get the API here: https://github.com/Game4Freak/BankingSystem-API/releases
